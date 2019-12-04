@@ -28,7 +28,6 @@ namespace WishList.Controllers
         {
             return View();
         }
-
         [HttpPost]
         [AllowAnonymous]
         public IActionResult Register(RegisterViewModel model)
@@ -47,7 +46,6 @@ namespace WishList.Controllers
                 }
                 return View(model);
             }
-
             return RedirectToAction("Index", "Home");
         }
     }
